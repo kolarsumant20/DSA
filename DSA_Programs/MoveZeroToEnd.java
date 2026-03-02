@@ -9,14 +9,16 @@ public class MoveZeroToEnd {
         // Move non-zero elements to the front
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] != 0) {
-                arr[index++] = arr[i];
+                arr[index] = arr[i];
+                index++;
                 
             }
         }
 
         // Fill remaining positions with 0
         while (index < arr.length) {
-            arr[index++] = 0;
+            arr[index] = 0;
+            index++;
         }
 
         System.out.println(Arrays.toString(arr));
