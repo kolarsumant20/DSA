@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 public class firstUniqCharacter {
     public static int firstUniqChar(String s) {
         int[] freq = new int[26];

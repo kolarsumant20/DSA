@@ -2,11 +2,11 @@ public class PatternSquareHollow {
 
     public static void printHollow(int n){
         // outer loop to handle number of rows
-        for(int i = 0; i < n; i++){
+        for(int i = 1; i <= n; i++){
             //  inner loop to handle number of columns
-            for(int j = 0; j < n; j++){
+            for(int j = 1; j <= n; j++){
                 // star will print only when  it is in first row or last row or first column or last column
-                if(i == 0 || j == 0 || i == n - 1 || j == n - 1){
+                if(i == 1 || j == 1 || i == n || j == n){
                     System.out.print("*");
                 }
                 else{
